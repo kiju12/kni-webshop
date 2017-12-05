@@ -27,7 +27,7 @@
 
 </head>
 <body>
- 	
+<!--  	gittest -->
  	${message}
  	<img src="${img}" alt="OBRAZEK" width="200" height="100"/>
  	
