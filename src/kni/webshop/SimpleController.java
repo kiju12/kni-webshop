@@ -16,7 +16,4 @@ public class SimpleController {
 		return new ModelAndView("welcome", "message", message);
 	}
 	
-	public void metodaTestowa() {
-		return;
-	}
 }
