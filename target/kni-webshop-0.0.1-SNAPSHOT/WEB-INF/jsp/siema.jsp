@@ -12,6 +12,8 @@
 			<div class="container">
 				<h1>${greeting}</h1>
 				<p>${tagline}</p>
+				<a href="welcome">welcome</a>
+			
 			</div>
 		</div>
 	</section>
