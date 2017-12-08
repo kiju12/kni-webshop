@@ -1,3 +1,4 @@
 eclipse.preferences.version=1
 encoding//WebContent/WEB-INF/views/siema.jsp=UTF-8
 encoding//WebContent/WEB-INF/views/welcome.jsp=UTF-8
+encoding//src/kni/webshop/domain/repository/impl/InMemoryProductRepository.java=UTF-8
