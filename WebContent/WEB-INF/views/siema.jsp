@@ -13,7 +13,7 @@
 				<h1>${greeting}</h1>
 				<p>${tagline}</p>
 				<a href="welcome">welcome</a>
-			
+				<a href="products">dostepne produkty</a>
 			</div>
 		</div>
 	</section>
