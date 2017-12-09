@@ -16,21 +16,21 @@ public class InMemoryProductRepository implements ProductRepository {
 	List<Product> allproducts = new ArrayList<>();
 
 	public InMemoryProductRepository() {
-		Product wino = new Product("0001", "Mocna wisnia", new BigDecimal(4));
+		Product wino = new Product("0001", "Mocna wisniax", new BigDecimal(4));
 		wino.setCategory("Tanie Wina");
 		wino.setCondition("Pelne");
 		wino.setDescription("Dobre, bo Dobre i tanie");
 		wino.setManufacturer("Amarena");
 		wino.setUnitsInStock(500);
 
-		Product woda = new Product("0002", "Zubroweczka", new BigDecimal(19));
+		Product woda = new Product("0002", "Zubroweczkax", new BigDecimal(19));
 		woda.setCategory("Mocne");
 		woda.setCondition("Pelna");
 		woda.setDescription("Pali ryja, ryje beret");
 		woda.setManufacturer("Mozgojeb S.p. z. o. o.");
 		woda.setUnitsInStock(1000);
 
-		Product browar = new Product("0003", "Zubr", new BigDecimal(2));
+		Product browar = new Product("0003", "Zubrx", new BigDecimal(2));
 		browar.setCategory("Soczki");
 		browar.setCondition("W polowie upite");
 		browar.setDescription("Siki");
@@ -53,11 +53,12 @@ public class InMemoryProductRepository implements ProductRepository {
 		for(Product product : allproducts) {      
 			if(product!=null && product.getProductId()!=null &&     
 					product.getProductId().equals(productId)){ 
-				productById = product; break;      
+				productById = product; 
+				break;      
 				}   
 			}   
 		if(productById == null){     
-				throw new IllegalArgumentException("Brak produktu o wskazanym id:      "+ productId);  
+				throw new IllegalArgumentException("Brak produktu o wskazanym id:     "+ productId);  
 			}   
 		return productById; 
 	}

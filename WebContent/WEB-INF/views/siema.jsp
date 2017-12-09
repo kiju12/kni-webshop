@@ -14,6 +14,7 @@
 				<p>${tagline}</p>
 				<a href="welcome">welcome</a>
 				<a href="products">dostepne produkty</a>
+				<a href="customers">lista klientow</a>
 			</div>
 		</div>
 	</section>
