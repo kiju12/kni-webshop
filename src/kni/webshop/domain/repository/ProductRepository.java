@@ -6,5 +6,6 @@ import kni.webshop.domain.Product;
 public interface ProductRepository {
 		
 	public Product getProductById(String id);
+	public List<Product> getProductByCategory(String category);
 	public List<Product> getAllProducts();
 }

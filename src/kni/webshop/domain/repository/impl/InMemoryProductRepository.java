@@ -22,7 +22,14 @@ public class InMemoryProductRepository implements ProductRepository {
 		wino.setDescription("Dobre, bo Dobre i tanie");
 		wino.setManufacturer("Amarena");
 		wino.setUnitsInStock(500);
-
+		
+		Product wino2 = new Product("0004", "Brzoskwinka", new BigDecimal(5));
+		wino2.setCategory("Tanie Wina");
+		wino2.setCondition("Pelne");
+		wino2.setDescription("Brzoskwiniowe szalenstwo");
+		wino2.setManufacturer("Unknown");
+		wino2.setUnitsInStock(200);
+		
 		Product woda = new Product("0002", "Zubroweczkax", new BigDecimal(19));
 		woda.setCategory("Mocne");
 		woda.setCondition("Pelna");
@@ -38,6 +45,7 @@ public class InMemoryProductRepository implements ProductRepository {
 		browar.setUnitsInStock(10000);
 
 		allproducts.add(wino);
+		allproducts.add(wino2);
 		allproducts.add(woda);
 		allproducts.add(browar);
 
@@ -61,6 +69,21 @@ public class InMemoryProductRepository implements ProductRepository {
 				throw new IllegalArgumentException("Brak produktu o wskazanym id:     "+ productId);  
 			}   
 		return productById; 
+	}
+
+	@Override
+	public List<Product> getProductByCategory(String category) {
+		List<Product> fullCategory = new ArrayList<>();
+		for(Product p : allproducts) {
+			if(p.getCategory().equals(category)) fullCategory.add(p);		
+		}
+		
+		if(fullCategory.isEmpty()) {
+			throw new IllegalArgumentException("Brak produktow o podanej kategorii " + category);
+			
+		}
+		
+		return fullCategory;
 	}
 
 }

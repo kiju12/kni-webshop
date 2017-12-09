@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet"
-	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <title>Witaj</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 				<h1>${greeting}</h1>
 				<p>${tagline}</p>
 				<a href="welcome">welcome</a>
-				<a href="products">dostepne produkty</a>
+				<a href="products/all">dostepne produkty</a>
 				<a href="customers">lista klientow</a>
 			</div>
 		</div>
